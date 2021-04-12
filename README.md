@@ -1,2 +1,2 @@
-# farm-cards
-Farm card calculations used for assessments
+# Kendall County Farm Card Calculations
+
