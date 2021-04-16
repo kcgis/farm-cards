@@ -10,3 +10,15 @@ This repository does *not* detail the *valuation* of farm parcels. The particula
 * farm-cards.ipynb
 
     This **Jupyter Notebook** gives the step-by step procedure typically followed, and shows examples of intermediate and final outputs. It also includes some discussion of how the code might be adapted for other environments.
+
+* farm_output.txt
+
+    Sample output from the notebook
+
+* input_pins.txt
+
+    Sample PINs for running the notebook
+
+* farm-cards.slides.html
+
+    A standalone presentation file of notebook cells converted to slides. Non-interactive.
