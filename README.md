@@ -22,3 +22,11 @@ This repository does *not* detail the *valuation* of farm parcels. The particula
 * `farm-cards.slides.html`
 
     A standalone presentation file of notebook cells converted to slides. Non-interactive.
+
+* `input_pins.shp, shx, etc`
+
+    Shapefile of input parcel features
+
+* `soil_PI.csv`
+
+    CSV of soil productivity indices per soil type, from the Illinois Department of Revenue
