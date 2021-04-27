@@ -1,5 +1,7 @@
 ## Modules
 import geopandas as gp
+import pandas as pd
+import numpy as np
 import requests
 
 ## Globals
@@ -115,16 +117,10 @@ def calc_farms(pin_list, out_path, return_df=False):
 
     ## Add Values
     # Productivity Index
-    pi_df = gp.read_file('resources/soil_PI_2021.csv').drop(columns='geometry')
-
-    pi_df[['productivity_index']] = pi_df[['productivity_index']].where(pi_df['productivity_index'] != '')
-
-    pi_df[['productivity_index']] = pi_df[['productivity_index']].astype('float')
+    pi_df = pd.read_csv('resources/soil_PI_2021.csv')
 
     # Slope and Erosion
-    se_df = gp.read_file('resources/soil_slope_erosion_2021.csv').drop(columns='geometry')
-
-    se_df[['coeff_fav', 'coeff_unf']] = se_df[['coeff_fav', 'coeff_unf']].astype('float')
+    se_df = se_df = pd.read_csv('resources/soil_slope_erosion_2021.csv')
 
     # Merge In to DF
     df = df.merge(pi_df, how='left', left_on='soil_type', right_on='map_symbol', suffixes=('','_desc'))
@@ -139,7 +135,14 @@ def calc_farms(pin_list, out_path, return_df=False):
 
     ## Equalized Assessment Values
     # Add table
-    eav_df = gp.read_file('resources/eav_2021.csv').drop(columns='geometry').astype('float')
+    eav_df = pd.read_csv('resources/eav_2021.csv')
+
+    # Calculate sub 82 PI EAV
+    sub82 = pd.DataFrame({'avg_PI': np.arange(1,82)})
+
+    sub82['eav'] = 199.29 - (((207.47-199.29)/5)*(82-sub82['avg_PI']))
+
+    eav_df = eav_df.append(sub82)
 
     df[['adj_PI']] = df[['adj_PI']].round()
 
