@@ -13207,17 +13207,111 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Farm-Card-Caculations:-Outline">Farm Card Caculations: Outline<a class="anchor-link" href="#Farm-Card-Caculations:-Outline">&#182;</a></h1><ol>
-<li>Background</li>
+<h1 id="Farm-Card-Calculations">Farm Card Calculations<a class="anchor-link" href="#Farm-Card-Calculations">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Outline">Outline<a class="anchor-link" href="#Outline">&#182;</a></h2><ol>
+<li>Background on Farm Cards</li>
 <li>Notebook Setup</li>
-<li>The Process</li>
+<li>The Main Process</li>
 <li>Alterations</li>
 <li>Questions?</li>
 </ol>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Content">The Content<a class="anchor-link" href="#The-Content">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Everything you're seeing here is <em>open source</em> and publicly available <a href="https://github.com/kcgis/farm-cards">in our GitHub repo</a>.</p>
+<p>If you like what you see and want to use it, please do! It's not a fully-fledged piece of software so much as a bunch of code, but you're welcome to it. For all I care, turn around and sell it! Build it into something! Just mind the license!</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Author">The Author<a class="anchor-link" href="#The-Author">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I'm Josh Carlson, the GIS Cadastral Analyst for Kendall County GIS.</p>
+<p><img src="images/author_image.jpg" alt="author image"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Get in touch!</strong></p>
+<table>
+<thead><tr>
+<th>platform</th>
+<th>username</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenStreetMap</td>
+<td><a href="https://www.openstreetmap.org/user/jdcarls2">jdcarls2</a></td>
+</tr>
+<tr>
+<td>AGOL</td>
+<td><a href="https://www.arcgis.com/home/user.html?user=carlsonj9">carlsonj9</a></td>
+</tr>
+<tr>
+<td>Esri Community</td>
+<td><a href="https://community.esri.com/t5/user/viewprofilepage/user-id/363906">jcarlson</a></td>
+</tr>
+<tr>
+<td>Discord</td>
+<td>jcarlson#7300</td>
+</tr>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/jdcarls2">jdcarls2</a></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="The-Presentation">The Presentation<a class="anchor-link" href="#The-Presentation">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This presentation <em>is</em> the Jupyter Notebook that is running the code, as well as the slides themselves.</p>
+<p>I want this Notebook to be as helpful as possible on its own, so the markdown cells are a bit verbose, and not the typical bullet point slideshow.</p>
+<p>There is a <em>lot</em> in this notebok to get through. If I'm honest, maybe a bit too much for 30 minutes.</p>
+<p>I will probably skim through certain sections. I would rather leave time at the end for you to ask questions than use up my time explaining the parts nobody wants to know about.</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13228,11 +13322,207 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Some content to go here about farm cards.</p>
+<h2 id="What-Even-Are-&quot;Farm-Cards&quot;?">What Even <em>Are</em> "Farm Cards"?<a class="anchor-link" href="#What-Even-Are-&quot;Farm-Cards&quot;?">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A farm card is an archaic term for the assessment record of a rural property, formerly kept on literal cards.</p>
+<p><img src="images/sample_card.png" alt="sample farm card"></p>
+<p><em>Image credits: IDR Publication 122</em></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nowadays, it refers to the list of landuse / soil areas in an agricultural parcel and their values. This notebook is concerned with the means by which said list is generated.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To assist counties in this, and in accordance with the Farmland Assessment Law, the Illinois Department of Revenue provides the following publication:</p>
+<p><a href="https://www2.illinois.gov/rev/research/publications/pubs/Documents/Pub-122.pdf">Publication 122: Instructions for Farmland Assessments</a></p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="IDR-Guidelines">IDR Guidelines<a class="anchor-link" href="#IDR-Guidelines">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Landuse">Landuse<a class="anchor-link" href="#Landuse">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Generally speaking, farm valuation is primarily concerned with:</p>
+<ul>
+<li>Cropland</li>
+<li>Pasture</li>
+<li>"Other farmland"</li>
+<li>Wasteland</li>
+<li>Homesites / Buildings</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are also other areas, like roads and rivers, which are important in identifying areas <em>not</em> to be valued.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="County-Landuse-Data">County Landuse Data<a class="anchor-link" href="#County-Landuse-Data">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To track these areas / features, the Assessment Office maintains a <strong>Landuse</strong> layer in our GIS portal.</p>
+<p>Using high-resolution imagery and current property boundaries as a guide, the Assessment Office makes updates and corrections to this layer as necessary to accurately reflect the current landuse category, according to Publication 122 guidelines.</p>
+<p><img src="images/landuse_image.png" alt="landuse"></p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Soils">Soils<a class="anchor-link" href="#Soils">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Following the recommendations of Publication 122, Kendall County uses <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/main/soils/survey/geo/">detailed soil data</a> prepared by NRCS.</p>
+<p>Esri maintains a <a href="https://arcgis.com/home/item.html?id=06e5fd61bdb6453fb16534c676e1c9b9#overview"><strong>Living Atlas</strong> layer</a> that can be used for this, but we chose instead to host a copy of the dataset, clipped to the Kendall County Region.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Why-a-Subset?">Why a Subset?<a class="anchor-link" href="#Why-a-Subset?">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Our layer is much smaller, and performs faster</li>
+<li>The Esri-provided layer is considered <strong>premium content</strong>, and is not available to public viewers</li>
+<li>The output needed from the calculation is easier if the <code>musym</code>, or 'map unit symbol', field can be split, so control over schema is needed:<ol>
+<li>Original: <code>musym = 119D</code>, specifies soil type <em>and</em> slope in single value</li>
+<li>Split: <code>soild_type = 119</code> + <code>slope = D</code>, one element tracked per field</li>
+</ol>
+</li>
+</ol>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Individual-Soil-Weighting-Method">Individual Soil Weighting Method<a class="anchor-link" href="#Individual-Soil-Weighting-Method">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Per IDR, there is a 10-step proccedure for assessing farmland:</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Get legal boundaries and aerial imagery</li>
+<li>Overlay soil types</li>
+<li>Using a combination of aerial imagery and on-site inspection, classify landuse areas</li>
+</ol>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Between GIS and the Assessment office, steps 1-3 are already taken care of before we even started this notebook, and are continuously amended as needed throughout the year.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Determine acreage of each soil type within each landuse category</li>
+<li>Determine PI ratings for soil types, using IDR reference table as necessary</li>
+<li>Adjust PI values for slope and erosion</li>
+<li>Determine EAV per acre of soil/slope/landuse combination based on IDR reference table</li>
+<li>Calculate assessed value by multiplying EAV with number of acres</li>
+<li>Subtotal acres and values by soil/slope/landuse</li>
+<li>Sum by parcel for full assessed value</li>
+</ol>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To be clear, many of these steps are simply formulas besed on attributes avd predetermined coefficients. In our case in particular, the assessment software used performs said calculations itself, and needs only the input attributes and acreage.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Put simply, most of this notebook is <strong>step 4</strong> (and part of step 9) of the process.</p>
+<blockquote><p>Determine the acreage of each soil type within each land use category that will be assessed by productivity. The measurement may be made using a planimeter, grid, electronic calculator, or computerized mapping system (GIS, autocad, map info, etc.) whereby the various maps (soil, aerial, tax) may be digitized or scanned-in as layers.</p>
+</blockquote>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It's worth pointing out that we <em>could</em> perform more of the steps here in our notebook, we (Kendall County) just don't need to. If <em>you do</em>, stick around to the end! We'll discuss extending this notebook for additional functionality, and we'll cover those other steps.</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13246,7 +13536,11 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Import-Modules">Import Modules<a class="anchor-link" href="#Import-Modules">&#182;</a></h2><p>We'll be using the following modules in this notebook:</p>
 <ul>
-<li>GeoPandas</li>
+<li>GeoPandas<ul>
+<li>Pandas</li>
+<li>Numpy</li>
+</ul>
+</li>
 <li>Requests</li>
 <li>MatPlotLib</li>
 </ul>
@@ -13258,7 +13552,10 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="GeoPandas"><a href="https://geopandas.org/">GeoPandas</a><a class="anchor-link" href="#GeoPandas">&#182;</a></h3><ul>
-<li>Spatially enabled extension of <strong><a href="https://pandas.pydata.org/">pandas</a></strong>, a popular Python data manipulation module</li>
+<li>Spatially enabled extension of <strong><a href="https://pandas.pydata.org/">pandas</a></strong>, a popular Python data manipulation module, itself building off of <strong><a href="https://numpy.org/">numpy</a></strong><ul>
+<li>For a handful of operations, it's simpler to access these modules directly</li>
+</ul>
+</li>
 <li>Uses <strong><a href="https://shapely.readthedocs.io/en/latest/">Shapely</a></strong> to handle spatial operations</li>
 <li>Uses <strong><a href="https://fiona.readthedocs.io/en/latest/README.html">Fiona</a></strong> for reading and writing spatial files</li>
 </ul>
@@ -13296,6 +13593,8 @@ a.anchor-link {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gp</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 
@@ -13323,47 +13622,14 @@ a.anchor-link {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Spatial reference for layers</span>
 <span class="n">sr</span> <span class="o">=</span> <span class="s2">&quot;{&#39;wkid&#39;: 3435}&quot;</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Parcels REST service</span>
+<span class="c1"># Parcels REST service</span>
 <span class="n">parcels_url</span> <span class="o">=</span> <span class="s1">&#39;https://maps.co.kendall.il.us/server/rest/services/Hosted/Current_Cadastral_Features/FeatureServer/1/query?&#39;</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SSURGO Soils REST service</span>
+<span class="c1"># SSURGO Soils REST service</span>
 <span class="n">soils_url</span> <span class="o">=</span> <span class="s1">&#39;https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_Soils/FeatureServer/0/query?&#39;</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Landuse REST service</span>
+<span class="c1"># Landuse REST service</span>
 <span class="n">landuse_url</span> <span class="o">=</span> <span class="s1">&#39;https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_Landuse/FeatureServer/0/query?&#39;</span>
 </pre></div>
 
@@ -13371,7 +13637,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13412,10 +13678,10 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;input_pins.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;resources/input_pins.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">pin_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&#39;&quot;</span> <span class="o">+</span> <span class="n">pin</span> <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span> <span class="k">for</span> <span class="n">pin</span> <span class="ow">in</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)]</span>
 
 <span class="n">pin_list</span>
@@ -13431,7 +13697,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13453,8 +13719,9 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Why the single-quotes in the PINs? Because these PINs are going to populate the <code>where</code> clause we submit to the REST service. The clause has to be formatted as valid SQL in order to evaluate.</p>
-<p>In our query, we'll be filtering the results using <code>IN</code> on a <strong>string</strong> field, so each value needs to be quoted out, and being SQL, must be single-quotes to be read as string values.</p>
+<p><em>Why the single-quotes in the PINs?</em></p>
+<p>Because these PINs are going to populate the <code>where</code> clause we submit to the REST service. The clause has to be formatted as valid SQL in order to evaluate.</p>
+<p>In our query, we'll be filtering the results using <code>IN</code> on a <strong>string</strong> field, so each value needs to be quoted out, and being SQL, must be single-quotes to be read as string values instead of column names.</p>
 <p>Also, rather than concatenate multiple strings, we're using Python's <em>f-strings</em> to build the where clause.</p>
 
 </div>
@@ -13462,7 +13729,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;pin IN (</span><span class="si">{</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pin_list</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
@@ -13502,7 +13769,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">parcels_params</span> <span class="o">=</span> <span class="p">{</span>
@@ -13520,7 +13787,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">parcels</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">parcels_url</span><span class="p">,</span> <span class="n">parcels_params</span><span class="p">)</span>
@@ -13533,7 +13800,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p_df</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">parcels</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
@@ -13554,7 +13821,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13570,7 +13837,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13651,7 +13918,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p_df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;pin&#39;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -13667,7 +13934,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13723,23 +13990,12 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p_df</span><span class="p">[</span><span class="s1">&#39;calc_area&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">p_df</span><span class="o">.</span><span class="n">area</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">p_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13752,7 +14008,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13862,7 +14118,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p_df</span><span class="o">.</span><span class="n">total_bounds</span>
@@ -13878,7 +14134,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13905,7 +14161,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bbox</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">p_df</span><span class="o">.</span><span class="n">total_bounds</span><span class="p">])</span>
@@ -13923,7 +14179,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13942,14 +14198,14 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Constructing-Queries">Constructing Queries<a class="anchor-link" href="#Constructing-Queries">&#182;</a></h2><p>The queries for our landuse and soils data will be the same.</p>
-<p>We want all the fields of all the features that <em>intersect</em> with the <code>bbox</code> geometry we just made.</p>
+<p>We want all the fields of all the features that <em>intersect</em> with the <code>bbox</code> geometry we just defined.</p>
 
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">farm_params</span> <span class="o">=</span> <span class="p">{</span>
@@ -13978,25 +14234,14 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">soils</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">soils_url</span><span class="p">,</span> <span class="n">farm_params</span><span class="p">)</span>
 
 <span class="n">s_df</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">soils</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">s_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14009,7 +14254,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14118,25 +14363,14 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">landuse</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">landuse_url</span><span class="p">,</span> <span class="n">farm_params</span><span class="p">)</span>
 
 <span class="n">l_df</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">landuse</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">l_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14149,7 +14383,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14253,7 +14487,7 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14314,7 +14548,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">overlay</span><span class="p">(</span><span class="n">p_df</span><span class="p">,</span> <span class="n">s_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;intersection&#39;</span><span class="p">)</span>
@@ -14335,7 +14569,7 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>&lt;ipython-input-46-fe9c10cecf63&gt;:2: UserWarning: `keep_geom_type=True` in overlay resulted in 18 dropped geometries of different geometry types than df1 has. Set `keep_geom_type=False` to retain all geometries
+<pre>&lt;ipython-input-17-fe9c10cecf63&gt;:2: UserWarning: `keep_geom_type=True` in overlay resulted in 18 dropped geometries of different geometry types than df1 has. Set `keep_geom_type=False` to retain all geometries
   df = gp.overlay(df, l_df, how=&#39;intersection&#39;)
 </pre>
 </div>
@@ -14347,7 +14581,7 @@ a.anchor-link {
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;pin&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -14363,7 +14597,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[47]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14403,7 +14637,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -14419,7 +14653,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[48]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -14463,24 +14697,24 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>89</th>
-      <td>81.17</td>
-      <td>07-35-200-005</td>
-      <td>3.533025e+06</td>
-      <td>1685</td>
-      <td>148A</td>
-      <td>{5EBBE6AD-7B76-4A12-A35C-D9F265C7EED9}</td>
-      <td>148</td>
+      <th>55</th>
+      <td>69.88</td>
+      <td>07-35-400-005</td>
+      <td>3.042915e+06</td>
+      <td>2126</td>
+      <td>149A</td>
+      <td>{1171FA42-8538-4E52-8E8E-17E374796E44}</td>
+      <td>149</td>
       <td>A1</td>
-      <td>15587.239787</td>
-      <td>3.654991e+06</td>
-      <td>7733</td>
-      <td>HS</td>
-      <td>{FCC8F029-CDFC-463C-9307-03EE52902223}</td>
-      <td>1</td>
-      <td>626.804624</td>
-      <td>10906.468134</td>
-      <td>POLYGON ((937170.659 1747760.109, 937146.884 1...</td>
+      <td>6585.692962</td>
+      <td>1.245429e+06</td>
+      <td>1746</td>
+      <td>CR</td>
+      <td>{5EF84209-751E-4B19-9201-D3DCC083196F}</td>
+      <td>2</td>
+      <td>7990.867454</td>
+      <td>3.568646e+06</td>
+      <td>POLYGON ((938256.391 1746436.946, 938178.517 1...</td>
     </tr>
   </tbody>
 </table>
@@ -14510,7 +14744,7 @@ a.anchor-link {
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">keepers</span> <span class="o">=</span> <span class="p">[</span>
@@ -14541,7 +14775,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">keepers</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14562,7 +14796,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14578,7 +14812,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[51]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14697,7 +14931,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;pin&#39;</span><span class="p">,</span> <span class="s1">&#39;calc_area&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;pin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14713,7 +14947,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[52]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14787,7 +15021,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">part_area</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">area</span><span class="p">)[[</span><span class="s1">&#39;pin&#39;</span><span class="p">,</span> <span class="s1">&#39;calc_area&#39;</span><span class="p">,</span> <span class="s1">&#39;part_area&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14803,7 +15037,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[53]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -14883,7 +15117,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span>
@@ -14902,7 +15136,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -14988,7 +15222,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span>
@@ -15008,7 +15242,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -15109,7 +15343,7 @@ $$
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;part_acres&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">area</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;calc_area&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gross_acres&#39;</span><span class="p">]</span>
@@ -15144,7 +15378,7 @@ $$
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;gross_acres&#39;</span><span class="p">,</span> <span class="s1">&#39;calc_area&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15188,7 +15422,7 @@ $$
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;pin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;pin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
@@ -15210,7 +15444,7 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Landuse follows a defined coded domain. However, this domain is actually strings of numeric characters, as opposed to true numbers.</p>
-<p>The landuse layer we used has the domain as numbers, though. Even as strings, though it's possible that a dataframe would wrongly infer the field to be numeric given its content.</p>
+<p>The landuse GIS layer we used has the domain as numbers, though. (Even as strings, though it's possible that a dataframe would wrongly infer the field to be numeric given its content.)</p>
 <p>To make this field ready for import, we have to insert a '0' before the number in the column and cast it as a string.</p>
 
 </div>
@@ -15218,7 +15452,7 @@ $$
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;landuse_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;landuse_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;str&#39;</span><span class="p">)</span>
@@ -15239,7 +15473,7 @@ $$
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15255,7 +15489,7 @@ $$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -15385,7 +15619,7 @@ $$
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">out_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pin&#39;</span><span class="p">,</span> <span class="s1">&#39;soil_type&#39;</span><span class="p">,</span> <span class="s1">&#39;slope&#39;</span><span class="p">,</span> <span class="s1">&#39;landuse_type&#39;</span><span class="p">]</span>
@@ -15411,7 +15645,7 @@ $$
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Before grouping:  53
+<pre>Before grouping:  154
 After grouping:  53
 </pre>
 </div>
@@ -15438,7 +15672,7 @@ After grouping:  53
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;part_acres&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;part_acres&#39;</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span>
@@ -15447,6 +15681,77 @@ After grouping:  53
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[33]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>04</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>0736300004</td>
+      <td>148</td>
+      <td>B1</td>
+      <td>01</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>0736300004</td>
+      <td>60</td>
+      <td>C2</td>
+      <td>02</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -15461,7 +15766,7 @@ After grouping:  53
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;part_acres&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
@@ -15474,7 +15779,7 @@ After grouping:  53
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15490,7 +15795,7 @@ After grouping:  53
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[72]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -15583,7 +15888,7 @@ After grouping:  53
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;farm_output.txt&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15596,7 +15901,7 @@ After grouping:  53
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;farm_output.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output</span><span class="p">:</span>
@@ -15686,15 +15991,2458 @@ After grouping:  53
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Filetypes">Filetypes<a class="anchor-link" href="#Filetypes">&#182;</a></h2>
+<p>So, this was cool and all, but what if your process doesn't look like mine? I'll leave it to you to handle the specifics, but in this section, we'll talk about ways this process can be adjusted.</p>
+
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To be fleshed out.</p>
+<h2 id="Inputs">Inputs<a class="anchor-link" href="#Inputs">&#182;</a></h2><p>If your data isn't coming from a service, you can still do this! There are many ways to get your GIS data into GeoPandas to work with it.</p>
+<p>If you open a full dataset, you can easily filter the GeoDataFrame once it's created.</p>
 
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Shapefiles-(and-other-files)">Shapefiles (and other files)<a class="anchor-link" href="#Shapefiles-(and-other-files)">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Is your data in a <em>shapefile</em>? (My sympathies.)</p>
+<p>Try the GeoPandas method <strong><a href="https://geopandas.org/docs/reference/api/geopandas.read_file.html#geopandas.read_file">geopandas.read_file</a></strong></p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;resources/input_pins.shp&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[38]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>objectid</th>
+      <th>pin</th>
+      <th>pin_dashle</th>
+      <th>parcel_typ</th>
+      <th>created_do</th>
+      <th>created_da</th>
+      <th>retired_do</th>
+      <th>retired_da</th>
+      <th>alt_pin</th>
+      <th>legal</th>
+      <th>...</th>
+      <th>non_farm_l</th>
+      <th>total_asse</th>
+      <th>tax_billed</th>
+      <th>site_addre</th>
+      <th>site_csz</th>
+      <th>owner_name</th>
+      <th>owner_addr</th>
+      <th>owner_ad_1</th>
+      <th>owner_csz</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>45888</td>
+      <td>07-35-200-005</td>
+      <td>0735200005</td>
+      <td>Ownership Parcel</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>81.11 AC TR LYG S ½ N ¼ SEC 35-35-6</td>
+      <td>...</td>
+      <td>2545</td>
+      <td>44802</td>
+      <td>0.0</td>
+      <td>13251 HILL RD</td>
+      <td>NEWARK, IL 60541</td>
+      <td>GARY &amp; DEBORAH PETERSON</td>
+      <td>13012 WHITEWILLOW RD</td>
+      <td>None</td>
+      <td>NEWARK, IL, 60541</td>
+      <td>POLYGON ((936901.020 1747738.210, 935569.290 1...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 33 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note that this will work with zipped shapefiles, too!</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;resources/input_pins.zip&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[39]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>objectid</th>
+      <th>pin</th>
+      <th>pin_dashle</th>
+      <th>parcel_typ</th>
+      <th>created_do</th>
+      <th>created_da</th>
+      <th>retired_do</th>
+      <th>retired_da</th>
+      <th>alt_pin</th>
+      <th>legal</th>
+      <th>...</th>
+      <th>non_farm_l</th>
+      <th>total_asse</th>
+      <th>tax_billed</th>
+      <th>site_addre</th>
+      <th>site_csz</th>
+      <th>owner_name</th>
+      <th>owner_addr</th>
+      <th>owner_ad_1</th>
+      <th>owner_csz</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>45888</td>
+      <td>07-35-200-005</td>
+      <td>0735200005</td>
+      <td>Ownership Parcel</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>81.11 AC TR LYG S ½ N ¼ SEC 35-35-6</td>
+      <td>...</td>
+      <td>2545</td>
+      <td>44802</td>
+      <td>0.0</td>
+      <td>13251 HILL RD</td>
+      <td>NEWARK, IL 60541</td>
+      <td>GARY &amp; DEBORAH PETERSON</td>
+      <td>13012 WHITEWILLOW RD</td>
+      <td>None</td>
+      <td>NEWARK, IL, 60541</td>
+      <td>POLYGON ((936901.020 1747738.210, 935569.290 1...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 33 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can <em>also</em> provide a spatial filter in the <strong>read_file</strong> method, or limit the rows/columns being read into the resulting dataframe.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;resources/input_pins.shp&#39;</span><span class="p">,</span>
+             <span class="n">ignore_fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pin_dashle&#39;</span><span class="p">,</span> <span class="s1">&#39;parcel_typ&#39;</span><span class="p">,</span> <span class="s1">&#39;created_do&#39;</span><span class="p">,</span> <span class="s1">&#39;created_da&#39;</span><span class="p">,</span> <span class="s1">&#39;retired_do&#39;</span><span class="p">,</span> <span class="s1">&#39;retired_da&#39;</span><span class="p">,</span> <span class="s1">&#39;legal&#39;</span><span class="p">,</span> <span class="s1">&#39;tax_status&#39;</span><span class="p">,</span> <span class="s1">&#39;township&#39;</span><span class="p">,</span> <span class="s1">&#39;municipali&#39;</span><span class="p">]</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[40]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>objectid</th>
+      <th>pin</th>
+      <th>alt_pin</th>
+      <th>tax_code</th>
+      <th>class</th>
+      <th>gross_acre</th>
+      <th>homesite_a</th>
+      <th>farm_ac</th>
+      <th>gis_acres</th>
+      <th>lot_dim</th>
+      <th>...</th>
+      <th>non_farm_l</th>
+      <th>total_asse</th>
+      <th>tax_billed</th>
+      <th>site_addre</th>
+      <th>site_csz</th>
+      <th>owner_name</th>
+      <th>owner_addr</th>
+      <th>owner_ad_1</th>
+      <th>owner_csz</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>45888</td>
+      <td>07-35-200-005</td>
+      <td>None</td>
+      <td>BG008</td>
+      <td>0011</td>
+      <td>81.17</td>
+      <td>0.25</td>
+      <td>80.92</td>
+      <td>81.107012</td>
+      <td>None</td>
+      <td>...</td>
+      <td>2545</td>
+      <td>44802</td>
+      <td>0.0</td>
+      <td>13251 HILL RD</td>
+      <td>NEWARK, IL 60541</td>
+      <td>GARY &amp; DEBORAH PETERSON</td>
+      <td>13012 WHITEWILLOW RD</td>
+      <td>None</td>
+      <td>NEWARK, IL, 60541</td>
+      <td>POLYGON ((936901.020 1747738.210, 935569.290 1...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 23 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are other (admittedly less common) filetypes that can be read directly into a GeoPandas dataframe, and additional options for doing so, but I'll leave that to you to explore.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="SQL-DB">SQL DB<a class="anchor-link" href="#SQL-DB">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There <em>are</em> ways to read an SQL query directly into a dataframe, if that's what you're working with. I don't happen to have a live DB connection to demo this for you, but you have a couple options.</p>
+<ul>
+<li>PostgreSQL + PostGIS, or SpatiaLite</li>
+<li>Other DB types</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you're using PostGIS (good for you!), GeoPandas has a method <strong><a href="https://geopandas.org/docs/reference/api/geopandas.read_postgis.html#geopandas.read_postgis">read_postgis</a></strong> for this. It might look like:</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>  
+<span class="n">db_connection_url</span> <span class="o">=</span> <span class="s2">&quot;postgres://myusername:mypassword@myhost:5432/mydatabase&quot;</span>
+<span class="n">con</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="n">db_connection_url</span><span class="p">)</span>  
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT geom, highway FROM roads&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">read_postgis</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">con</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Other-DBs">Other DBs<a class="anchor-link" href="#Other-DBs">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you happen to be on a different database platform, pandas has its own <strong><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html">read_sql</a></strong> method. You'll need to separately import pandas, then have an additional step getting it into GeoPandas, but it's not difficult.</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>  
+<span class="n">db_connection_url</span> <span class="o">=</span> <span class="s2">&quot;postgres://myusername:mypassword@myhost:5432/mydatabase&quot;</span>
+<span class="n">con</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="n">db_connection_url</span><span class="p">)</span>  
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT geom, highway FROM roads&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">con</span><span class="p">)</span>
+<span class="n">gdf</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="s1">&#39;shape-column-name&#39;</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="s1">&#39;some-spatial-reference-wkt&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Outputs">Outputs<a class="anchor-link" href="#Outputs">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As with the preceding section between GeoPandas and pandas, you can also write your results to all of the same formats and more.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Doing-the-Valuation,-too!">Doing the Valuation, too!<a class="anchor-link" href="#Doing-the-Valuation,-too!">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Maybe you'd like to calculate the values here? You can! All you need are the tables from Publication 122 (Revised from <a href="https://www2.illinois.gov/rev/localgovernments/property/Documents/B810.pdf">Bulletin 810</a>) as their own dataframes.</p>
+<p>They make up most of Publication 122, and are, unhelpfully, in PDF form. But once you get the values into a CSV or similar, just load it in much like our we did the PINs earlier.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Soil-Productivity-Index-($PI$)">Soil Productivity Index ($PI$)<a class="anchor-link" href="#Soil-Productivity-Index-($PI$)">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>GeoPandas expects there to be a spatial component to datasets. There is none here, so we use <strong>pandas</strong> to create the dataframe instead. Plus pandas is better at inferring datatypes based on the contents of a column.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pi_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;resources/soil_PI_2021.csv&#39;</span><span class="p">)</span>
+
+<span class="n">pi_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[41]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>map_symbol</th>
+      <th>soil_type</th>
+      <th>favorability</th>
+      <th>productivity_index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>Cisne silt loam</td>
+      <td>Favorable</td>
+      <td>97.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>Hoyleton silt loam</td>
+      <td>Favorable</td>
+      <td>96.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>Richview silt loam</td>
+      <td>Favorable</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>5</td>
+      <td>Blair silt loam</td>
+      <td>Unfavorable</td>
+      <td>92.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>6</td>
+      <td>Fishhook silt loam</td>
+      <td>Unfavorable</td>
+      <td>86.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Slope-and-Erosion-Coefficients">Slope and Erosion Coefficients<a class="anchor-link" href="#Slope-and-Erosion-Coefficients">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Though there is a full table of PI adjustments for each 1% from 0 to 43, we don't have the slope values in such detail. Working with NRCS soil data, we have the following classes based on the map symbol's slope letter:</p>
+<table>
+<thead><tr>
+<th>Letter Code</th>
+<th style="text-align:center">% Slope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None / A</td>
+<td style="text-align:center">0-2%</td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align:center">2-5%</td>
+</tr>
+<tr>
+<td>C</td>
+<td style="text-align:center">5-10%</td>
+</tr>
+<tr>
+<td>D</td>
+<td style="text-align:center">10-15%</td>
+</tr>
+<tr>
+<td>E</td>
+<td style="text-align:center">15-18%</td>
+</tr>
+<tr>
+<td>F</td>
+<td style="text-align:center">18-35%</td>
+</tr>
+<tr>
+<td>G</td>
+<td style="text-align:center">35-70%</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Per Pub 122:</p>
+<blockquote><p>Because Table 3 cannot be used with slope ranges, use a central point of the slope ranges unless a better determinant of slope is available.</p>
+</blockquote>
+<p>For our case, we'll use a central value of each class to determine the coefficient to apply to the PI.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Within each slope class, the erosion number further modifies the coefficient, and not consistently. That is, moderate erosion on flat terrain will impact productivity less than moderate erosion on steep terrain.</p>
+<p>The various combinations and coefficients reside in their own table, which is maintained by the Assessments Office. We'll pull it in from a CSV as well.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">se_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;resources/soil_slope_erosion_2021.csv&#39;</span><span class="p">)</span>
+
+<span class="n">se_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[42]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>erosion_code</th>
+      <th>slope_desc</th>
+      <th>eros_desc</th>
+      <th>coeff_fav</th>
+      <th>coeff_unf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>A</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>A2</td>
+      <td>0-2%</td>
+      <td>MODERATE</td>
+      <td>0.96</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>A3</td>
+      <td>0-2%</td>
+      <td>SEVERE</td>
+      <td>0.88</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>B</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Merge-DataFrames">Merge DataFrames<a class="anchor-link" href="#Merge-DataFrames">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We've got our original output dataframe from before, <code>df</code>, plus our two new dataframes with their overlapping columns.</p>
+<p>For this, we'll use <strong><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html">merge</a></strong>, which can perform database-style table joins based on column values.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Productivity-Index">Productivity Index<a class="anchor-link" href="#Productivity-Index">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">pi_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;soil_type&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;map_symbol&#39;</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_desc&#39;</span><span class="p">))</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[43]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+      <th>map_symbol</th>
+      <th>soil_type_desc</th>
+      <th>favorability</th>
+      <th>productivity_index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0735200005</td>
+      <td>145</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>7.1793</td>
+      <td>145</td>
+      <td>Saybrook silt loam</td>
+      <td>Favorable</td>
+      <td>117.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>01</td>
+      <td>0.2506</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>02</td>
+      <td>38.4684</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>06</td>
+      <td>0.8468</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>17.3176</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Slope-and-Erosion">Slope and Erosion<a class="anchor-link" href="#Slope-and-Erosion">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">se_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;slope&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;erosion_code&#39;</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[44]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+      <th>map_symbol</th>
+      <th>soil_type_desc</th>
+      <th>favorability</th>
+      <th>productivity_index</th>
+      <th>erosion_code</th>
+      <th>slope_desc</th>
+      <th>eros_desc</th>
+      <th>coeff_fav</th>
+      <th>coeff_unf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0735200005</td>
+      <td>145</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>7.1793</td>
+      <td>145</td>
+      <td>Saybrook silt loam</td>
+      <td>Favorable</td>
+      <td>117.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>01</td>
+      <td>0.2506</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>02</td>
+      <td>38.4684</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>06</td>
+      <td>0.8468</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>17.3176</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Adusted-$PI$">Adusted $PI$<a class="anchor-link" href="#Adusted-$PI$">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To get the adusted $PI$, we just need to multiply the value from the soils table with the coefficients.</p>
+<p>But! We need to do so based on the <em>favorability</em> of the soil type. Here's what we'll do:</p>
+<ol>
+<li>Create a new field, <code>adj_PI</code>, using the 'Favorable' coefficient</li>
+<li>Use <strong>where</strong> to replace values matching a condition, in this case features w/ 'Unfavorable', while retaining original values for those which do not match</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;adj_PI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;productivity_index&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;coeff_fav&#39;</span><span class="p">]</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[45]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+      <th>map_symbol</th>
+      <th>soil_type_desc</th>
+      <th>favorability</th>
+      <th>productivity_index</th>
+      <th>erosion_code</th>
+      <th>slope_desc</th>
+      <th>eros_desc</th>
+      <th>coeff_fav</th>
+      <th>coeff_unf</th>
+      <th>adj_PI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0735200005</td>
+      <td>145</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>7.1793</td>
+      <td>145</td>
+      <td>Saybrook silt loam</td>
+      <td>Favorable</td>
+      <td>117.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>115.83</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>01</td>
+      <td>0.2506</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>02</td>
+      <td>38.4684</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>06</td>
+      <td>0.8468</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>17.3176</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>118.80</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;adj_PI&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;adj_PI&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;favorability&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Favorable&#39;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;productivity_index&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;coeff_unf&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[46]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+      <th>map_symbol</th>
+      <th>soil_type_desc</th>
+      <th>favorability</th>
+      <th>productivity_index</th>
+      <th>erosion_code</th>
+      <th>slope_desc</th>
+      <th>eros_desc</th>
+      <th>coeff_fav</th>
+      <th>coeff_unf</th>
+      <th>adj_PI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0735200005</td>
+      <td>145</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>7.1793</td>
+      <td>145</td>
+      <td>Saybrook silt loam</td>
+      <td>Favorable</td>
+      <td>117.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>115.83</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>01</td>
+      <td>0.2506</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>02</td>
+      <td>38.4684</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>06</td>
+      <td>0.8468</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>17.3176</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>118.80</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We don't actually <em>have</em> unfavorable soil types in this sample, but if there were, the <code>adj_PI</code> value would now be adjusted accordingly.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Merge-in-the-Equalized-Assessed-Value">Merge in the Equalized Assessed Value<a class="anchor-link" href="#Merge-in-the-Equalized-Assessed-Value">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's bring in <em>another</em> table. <strong>Table 1</strong> from Pub 122 contains the certified per-acre EAV for a given productivity index. And don't be fooled by table 1's headers!</p>
+<p>Even though the second to last column is titled <strong>Equalized Assessed Value</strong> (something you might shorten to, y'know, <em>E-A-V</em>), whenever Publication 122 makes reference to an EAV in their instructions, they are referring to the <strong>Certified Value</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">eav_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;resources/eav_2021.csv&#39;</span><span class="p">)</span>
+
+<span class="n">eav_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[47]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>avg_PI</th>
+      <th>eav</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>82</td>
+      <td>199.29</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>83</td>
+      <td>200.90</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>84</td>
+      <td>202.51</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>85</td>
+      <td>204.18</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>86</td>
+      <td>205.86</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="$PI-&lt;-82$">$PI &lt; 82$<a class="anchor-link" href="#$PI-&lt;-82$">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Before proceeding, it's worth pointing out: 82 is the lowest PI value for which there is a certified value, but <strong>it is not the lowest possible PI</strong>, especially after adjusting for slope and erosion in the prior steps.</p>
+<p>Following the <a href="https://www2.illinois.gov/rev/localgovernments/property/Documents/PiBelow82.pdf">IDR's document on the topic</a>, there is a correct way to evaluate the EAV for a PI below 82.</p>
+<p>For a low PI of $PI_{n}$ under the minimum certified PI $PI_{min}:</p>
+$$
+EAV^{PI_{n}} = EAV^{PI_{min}} - \left(\frac{EAV^{PI_{min+5}} - EAV^{PI_{min}}}{5} * (min - n)\right) \vee \frac{EAV^{PI_{min}}}{3}
+$$<p>Whichever is greater.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Put in the certified 2021 values, this would be:
+$$
+EAV^{PI_{n}} = 199.29 - \left(\frac{207.47 - 199.29}{5} * (82 - n)\right) \vee \frac{199.29}{3}
+$$</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Populating-the-Sub-82-Values">Populating the Sub-82 Values<a class="anchor-link" href="#Populating-the-Sub-82-Values">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Using that formula, we can now populate all possible PI values below 82.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub82</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;avg_PI&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">82</span><span class="p">)})</span>
+
+<span class="n">sub82</span><span class="p">[</span><span class="s1">&#39;eav&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">199.29</span> <span class="o">-</span> <span class="p">(((</span><span class="mf">207.47</span><span class="o">-</span><span class="mf">199.29</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">82</span><span class="o">-</span><span class="n">sub82</span><span class="p">[</span><span class="s1">&#39;avg_PI&#39;</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Floor: </span><span class="si">{</span><span class="mf">199.29</span><span class="o">/</span><span class="mi">3</span><span class="si">:</span><span class="s1">0.5</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">sub82</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Floor: 66.43
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[48]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>avg_PI</th>
+      <th>eav</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>66.774</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>68.410</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>70.046</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>71.682</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>73.318</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that even a PI of 1 is above the calculated floor. That value will really only begin to matter in Other Farmland areas.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Append-New-Values-to-the-EAV-Table">Append New Values to the EAV Table<a class="anchor-link" href="#Append-New-Values-to-the-EAV-Table">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">eav_df</span> <span class="o">=</span> <span class="n">eav_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sub82</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To successfully merge the EAV into our main dataframe, we've got to round our <code>adj_PI</code> values to the nearest integer.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;adj_PI&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;adj_PI&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">round</span><span class="p">()</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">eav_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;adj_PI&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;avg_PI&#39;</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[50]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+      <th>map_symbol</th>
+      <th>soil_type_desc</th>
+      <th>favorability</th>
+      <th>productivity_index</th>
+      <th>erosion_code</th>
+      <th>slope_desc</th>
+      <th>eros_desc</th>
+      <th>coeff_fav</th>
+      <th>coeff_unf</th>
+      <th>adj_PI</th>
+      <th>avg_PI</th>
+      <th>eav</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0735200005</td>
+      <td>145</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>7.1793</td>
+      <td>145</td>
+      <td>Saybrook silt loam</td>
+      <td>Favorable</td>
+      <td>117.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>116.0</td>
+      <td>116</td>
+      <td>441.56</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>01</td>
+      <td>0.2506</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.0</td>
+      <td>120</td>
+      <td>494.28</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>02</td>
+      <td>38.4684</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.0</td>
+      <td>120</td>
+      <td>494.28</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>A1</td>
+      <td>06</td>
+      <td>0.8468</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>120.0</td>
+      <td>120</td>
+      <td>494.28</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0735200005</td>
+      <td>148</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>17.3176</td>
+      <td>148</td>
+      <td>Proctor silt loam</td>
+      <td>Favorable</td>
+      <td>120.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>119.0</td>
+      <td>119</td>
+      <td>476.16</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Apply-Landuse-Coefficients">Apply Landuse Coefficients<a class="anchor-link" href="#Apply-Landuse-Coefficients">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Landuse is simple. For the big three landuse types, <strong>cropland, pasture, and other farmland</strong>, it's a simple division. Nearly everything else is zeroed out (hydro, roadways), or assessed separately (homesites).</p>
+<table>
+<thead><tr>
+<th>landuse_type</th>
+<th>landuse_desc</th>
+<th>eav_adj</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>02</td>
+<td>Cropland</td>
+<td>$EAV*1$</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Permanent Pasture</td>
+<td>$\frac{EAV}{3}$</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Other Farmland</td>
+<td>$\frac{EAV}{6}$</td>
+</tr>
+</tbody>
+</table>
+<p>For <strong>contributory wasteland</strong>, we assess the land at 1/6 of the EAV of the <em>lowest PI of cropland certified by IDR</em>, which for 2021, happens to be <strong>82</strong>. This results in an EAV of <strong>$33.22</strong>.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Create-and-Populate-New-Field">Create and Populate New Field<a class="anchor-link" href="#Create-and-Populate-New-Field">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To save us a series of filters and calculations, we'll create the new <code>eav_adj</code> field with a default value equal to  the <code>eav</code>, which is correct for cropland.</p>
+<p>We'll then use <strong>where</strong> to assign all non-cropland areas to <strong>0</strong>, which takes care of most everything else.</p>
+<p>Then we'll run calculations for the remaining 3 landuse types.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eav_adj&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;eav_adj&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;eav&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;landuse_type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;02&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Calculations">Calculations<a class="anchor-link" href="#Calculations">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># permanent pasture</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;landuse_type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;03&#39;</span><span class="p">,</span> <span class="s1">&#39;eav_adj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;eav&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="c1"># other farmland</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;landuse_type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;04&#39;</span><span class="p">,</span> <span class="s1">&#39;eav_adj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;eav&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">6</span>
+
+<span class="c1"># # contributory wasteland</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;landuse_type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;05&#39;</span><span class="p">,</span> <span class="s1">&#39;eav_adj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">33.22</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Just to check, let's grab a random sample (the top rows don't show any landuse types that were calculated).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;landuse_type&#39;</span><span class="p">,</span> <span class="s1">&#39;eav&#39;</span><span class="p">,</span> <span class="s1">&#39;eav_adj&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[53]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>landuse_type</th>
+      <th>eav</th>
+      <th>eav_adj</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>38</th>
+      <td>02</td>
+      <td>768.46</td>
+      <td>768.460000</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>06</td>
+      <td>768.46</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>04</td>
+      <td>669.71</td>
+      <td>111.618333</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>02</td>
+      <td>768.46</td>
+      <td>768.460000</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>05</td>
+      <td>768.46</td>
+      <td>33.220000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Multiply-Adjusted-EAV-by-Acres">Multiply Adjusted EAV by Acres<a class="anchor-link" href="#Multiply-Adjusted-EAV-by-Acres">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Last step: multiply our adjusted EAV by the acres in each row.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;part_acres&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;eav_adj&#39;</span><span class="p">]</span>
+
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;pin&#39;</span><span class="p">,</span> <span class="s1">&#39;soil_type&#39;</span><span class="p">,</span> <span class="s1">&#39;slope&#39;</span><span class="p">,</span> <span class="s1">&#39;landuse_type&#39;</span><span class="p">,</span> <span class="s1">&#39;part_acres&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[54]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>39</th>
+      <td>0736300004</td>
+      <td>152</td>
+      <td>A1</td>
+      <td>04</td>
+      <td>12.5460</td>
+      <td>1606.849860</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>0736300004</td>
+      <td>152</td>
+      <td>A1</td>
+      <td>02</td>
+      <td>54.9921</td>
+      <td>42259.229166</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0735200005</td>
+      <td>152</td>
+      <td>A1</td>
+      <td>05</td>
+      <td>0.0903</td>
+      <td>2.999766</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0735400005</td>
+      <td>148</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>29.8578</td>
+      <td>14217.090048</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>0736300004</td>
+      <td>152</td>
+      <td>A1</td>
+      <td>05</td>
+      <td>1.3903</td>
+      <td>46.185766</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>That's it! You just calculated your farmland values!</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Standalone-Script">Standalone Script<a class="anchor-link" href="#Standalone-Script">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>This is all great</em>, you say, <em>but maybe I don't want to boot up this notebook every time I need new farm values.</em></p>
+<p>Not to worry!</p>
+<p>Except for the PINs, there was no other point at which user input is necessary. Because of this, we can wrap up everything we did so far into a single <code>farm-cards.py</code> script, which has already been done.</p>
+<p>Here in the notebook, we can treat this like its own module, importing it and calling the function defined therein.</p>
+<p>Because the script is meant to be run on its own, there are a few differences. We'll throw a ? on there to pull up the docstring.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">farm_cards</span> <span class="kn">import</span> <span class="n">calc_farms</span>
+
+calc_farms<span class="o">?</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's actually run the script!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">calc_farms</span><span class="p">(</span>
+    <span class="n">pin_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;01-01-400-005&#39;</span><span class="p">,</span> <span class="s1">&#39;01-01-400-002&#39;</span><span class="p">],</span>
+    <span class="n">out_path</span> <span class="o">=</span> <span class="s1">&#39;farm_output2.txt&#39;</span><span class="p">,</span>
+    <span class="n">return_df</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\jcarlson\Desktop\Code\farm-cards\farm_cards.py:77: UserWarning: `keep_geom_type=True` in overlay resulted in 6 dropped geometries of different geometry types than df1 has. Set `keep_geom_type=False` to retain all geometries
+  df = gp.overlay(df, l_df, how=&#39;intersection&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One of the parameters added was <code>return_df</code>, which, when set to <code>True</code>, will also return a dataframe object from running the script. Unless otherwise defined, it defaults to false, but it can be helpful to look at the output dataframe if the file doesn't look right.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[57]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pin</th>
+      <th>soil_type</th>
+      <th>slope</th>
+      <th>landuse_type</th>
+      <th>part_acres</th>
+      <th>map_symbol</th>
+      <th>soil_type_desc</th>
+      <th>favorability</th>
+      <th>productivity_index</th>
+      <th>erosion_code</th>
+      <th>slope_desc</th>
+      <th>eros_desc</th>
+      <th>coeff_fav</th>
+      <th>coeff_unf</th>
+      <th>adj_PI</th>
+      <th>avg_PI</th>
+      <th>eav</th>
+      <th>eav_adj</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0101400002</td>
+      <td>191</td>
+      <td>A1</td>
+      <td>02</td>
+      <td>2.4310</td>
+      <td>191</td>
+      <td>Knight silt loam</td>
+      <td>Favorable</td>
+      <td>107.0</td>
+      <td>A1</td>
+      <td>0-2%</td>
+      <td>UNERODED</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>107.0</td>
+      <td>107.0</td>
+      <td>355.680</td>
+      <td>355.680000</td>
+      <td>864.658080</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0101400002</td>
+      <td>318</td>
+      <td>D2</td>
+      <td>04</td>
+      <td>0.1156</td>
+      <td>318</td>
+      <td>Lorenzo loam</td>
+      <td>Unfavorable</td>
+      <td>93.0</td>
+      <td>D2</td>
+      <td>10-15%</td>
+      <td>MODERATE</td>
+      <td>0.87</td>
+      <td>0.82</td>
+      <td>76.0</td>
+      <td>76.0</td>
+      <td>189.474</td>
+      <td>31.579000</td>
+      <td>3.650532</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0101400002</td>
+      <td>327</td>
+      <td>C2</td>
+      <td>02</td>
+      <td>1.4761</td>
+      <td>327</td>
+      <td>Fox silt loam</td>
+      <td>Favorable</td>
+      <td>96.0</td>
+      <td>C2</td>
+      <td>5-10%</td>
+      <td>MODERATE</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>88.0</td>
+      <td>88.0</td>
+      <td>208.970</td>
+      <td>208.970000</td>
+      <td>308.460617</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0101400002</td>
+      <td>327</td>
+      <td>C2</td>
+      <td>04</td>
+      <td>5.0004</td>
+      <td>327</td>
+      <td>Fox silt loam</td>
+      <td>Favorable</td>
+      <td>96.0</td>
+      <td>C2</td>
+      <td>5-10%</td>
+      <td>MODERATE</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>88.0</td>
+      <td>88.0</td>
+      <td>208.970</td>
+      <td>34.828333</td>
+      <td>174.155598</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0101400002</td>
+      <td>663</td>
+      <td>B1</td>
+      <td>02</td>
+      <td>9.9768</td>
+      <td>663</td>
+      <td>Barony silt loam</td>
+      <td>Favorable</td>
+      <td>118.0</td>
+      <td>B1</td>
+      <td>2-5%</td>
+      <td>UNERODED</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>117.0</td>
+      <td>117.0</td>
+      <td>452.930</td>
+      <td>452.930000</td>
+      <td>4518.792024</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Questions?">Questions?<a class="anchor-link" href="#Questions?">&#182;</a></h1>
 </div>
 </div>
 </div></section></section>

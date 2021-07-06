@@ -1,3 +1,8 @@
 .ipynb_checkpoints/farm-cards-checkpoint.ipynb
 .vscode/settings.json
 __pycache__/farm_cards.cpython-38.pyc
+full-county-farms.txt
+lr_farms_2021.txt
+lr-farms-2021.txt
+test.txt
+outliers.csv
