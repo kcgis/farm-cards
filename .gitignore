@@ -3,4 +3,5 @@
 __pycache__/
 test.txt
 outliers.csv
-/resources/farms.gdb/
+**/farms.gdb/
+pins.txt
