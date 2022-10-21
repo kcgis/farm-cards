@@ -6,158 +6,232 @@
 # Output:       A .txt file
 ########
 
+def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tolerance=0.001):
 
-## Modules
-import geopandas as gp
-import pandas as pd
-import numpy as np
-import requests
-from pathlib import Path
-from datetime import datetime
-import re
+    """
+    Calculates farm card import values for set of input PINs.
 
-## Globals -- Change these as needed
-# Spatial reference for layers
-sr = "{'wkid': 3435}"
+        Parameters:
+            pins (str): A string of one to many PINs. If this parameter is set, it will override any `pin_file`.
+            pin_file (str): A path to a text-based file with PINs in it.
+            out_file (str): A path to the desired output file. Defaults to the desktop if not otherwise specified.
+            errors (str): How the function should handle any errors. Default 'warn' will print messages but take no other action. Additional valid options:
+                - halt: Stop the script when an error is encountered
+                - write: Write error messages to separate file
+                - ignore: No errors will be reported
+            acre_tolerance (float): A percentage. When the output acreage does not match the input, differences under this threshold will be scaled up or down to meet the input acreage.
+    """
 
-# Parcels REST service
-parcels_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Current_Cadastral_Features/FeatureServer/1/query?'
+    ## Modules
+    import geopandas as gp
+    import pandas as pd
+    import numpy as np
+    import requests
+    from pathlib import Path
+    from datetime import datetime
+    import re
 
-# SSURGO Soils REST service
-soils_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_Soils/FeatureServer/0/query?'
+    ## Error Function
+    def farm_error(msg):
 
-# Landuse REST service
-landuse_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_Landuse/FeatureServer/0/query?'
+        if errors == 'warn':
+            print(msg)
+        elif errors == 'write':
+            with open('./errors.txt', 'a') as e:
+                e.write(f'\n{msg}')
+        elif errors == 'halt':
+            raise ValueError(msg)
 
-# Prepare default output
-out_file = Path.expanduser(Path(f"~/Desktop/farms_{datetime.now().strftime('%Y%m%d-%H%M')}.txt"))
+    # Check to see if correct values passed to params
+    if errors not in ['warn', 'write', 'halt', 'ignore']:
+        raise ValueError(f'errors value of "{errors}" is incorrect. Please specify one of: warn, ignore, halt, or write')
+
+    ## Globals -- Change these as needed
+    # Spatial reference for layers
+    sr = "{'wkid': 3435}"
+
+    # Parcels REST service
+    parcels_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Current_Cadastral_Features/FeatureServer/1/query?'
+
+    # SSURGO Soils REST service
+    soils_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_Soils/FeatureServer/0/query?'
+
+    # Landuse REST service
+    landuse_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_Landuse/FeatureServer/0/query?'
+
+    # Prepare default output
+    if not out_file:
+        out_file = Path.expanduser(Path(f"./output/farms_{datetime.now().strftime('%Y%m%d-%H%M')}.txt"))
+
+    # If specifically set to 'write', create fresh file
+    if errors == 'write':
+        with open('./errors.txt', 'w') as e:
+            e.write(f'-----ERROR LOG FOR {out_file}-----')
+        
+    ## Drop any existing file by same name
+    if Path.exists(out_file):
+        print('Output file already exists. Removing!')
+        Path(out_file).unlink()
+    Path.touch(out_file)
+    print('Good to go!')
+
+    ## Warnings start at False
+    warnings = False
+
+    ## Get PINs
+    # Read file if `pins` parameter not stated
+    if not pins:
+        with open(pin_file) as pfile:
+            pins = pfile.read()
+
+    # Find all valid PINs in string, convert to list
+    pin_patt = re.compile(r'\d{2}-?\d{2}-?\d{3}-?\d{3}')
+    pin_list = list(map(lambda x: x.replace('-', ''), re.findall(pin_patt, pins)))
+
+    # Dedupe list
+    pin_list = list(dict.fromkeys(pin_list))
     
-## Drop any existing file by same name
-if Path.exists(out_file):
-    print('Output file already exists. Removing!')
-    Path.remove(out_file)
-Path.touch(out_file)
-print('Good to go!')
 
-## Warnings start at False
-warnings = False
+    ### Iterate over pin_list and calculate per parcel, append to output file
+    n = 0
 
-## Get a list of PINs from variable text input
-pin_string = input('Enter PINs: ')
-pin_list = re.split('\n|,|&', re.sub(' |-', '', pin_string))
-pins = ','.join(["'" + p.replace('-', '') + "'" for p in pin_list])
+    while n < len(pin_list):
 
-## Parcels DF
-# Request parameters
-parcels_params = {
-    'where': f"pin_dashless IN ({pins})",
-    'outFields': 'gross_acres, pin_dashless',
-    'outSR': sr,
-    'f': 'geojson'
-}
+        ## Parcels DF
+        # Request parameters
+        parcels_params = {
+            'where': f"pin_dashless = '{pin_list[n]}'",
+            'outFields': 'gross_acres, pin_dashless',
+            'outSR': sr,
+            'f': 'geojson'
+        }
 
-parcels = requests.get(parcels_url, parcels_params)
-parcels_df = gp.read_file(parcels.text)
+        # Get parcels
+        parcel = requests.get(parcels_url, parcels_params)
 
-parcels_df['calc_area'] = parcels_df.area
+        # Check that query returned a shape
+        p_dict = parcel.json()
 
-### Iterate over p_df and calculate per parcel, append to output file
-n = 0
+        if len(p_dict['features']) == 0:
+            
+            farm_error(f"Query for PIN {pin_list[n]} returned no features.")
+            warnings = True
+            n += 1
+            continue
 
-while n < len(parcels_df):
-    p_df = parcels_df.iloc[n:n+1]
+        # Convert to geodataframe
+        p_df = gp.read_file(parcel.text)
+        p_df['calc_area'] = p_df.area
 
-    # Spatial Filter
-    bbox = ','.join([str(i) for i in p_df.total_bounds])
+        # Check to see that parcels have an acreage listed
+        if p_df.loc[0,'gross_acres'] == 0 or not p_df.loc[0,'gross_acres']:
+            farm_error(f"PIN {pin_list[n]} has 0 acreage! Double check acreage and property class in Devnet.")
+            warnings = True
+            n += 1
+            continue
 
-    # Params
-    farm_params = {
-        'where': '1=1',
-        'outFields': '*',
-        'returnGeometry': True,
-        'geometryType': 'esriGeometryEnvelope',
-        'geometry': bbox,
-        'spatialRel': 'esriSpatialRelIntersects',
-        'outSR': sr,
-        'f': 'geojson'
-    }
+        # Spatial Filter
+        bbox = ','.join([str(i) for i in p_df.total_bounds])
 
-    # Soils
-    soils = requests.get(soils_url, farm_params)
-    s_df = gp.read_file(soils.text)
+        # Params
+        farm_params = {
+            'where': '1=1',
+            'outFields': '*',
+            'returnGeometry': True,
+            'geometryType': 'esriGeometryEnvelope',
+            'geometry': bbox,
+            'spatialRel': 'esriSpatialRelIntersects',
+            'outSR': sr,
+            'f': 'geojson'
+        }
 
-    # Landuse
-    landuse = requests.get(landuse_url, farm_params)
+        # Soils
+        soils = requests.get(soils_url, farm_params)
+        s_df = gp.read_file(soils.text)
 
-    l_df = gp.read_file(landuse.text)
+        # Landuse
+        landuse = requests.get(landuse_url, farm_params)
 
-    ## Overlay Data, Tidy Up
-    df = gp.overlay(p_df, s_df, how='intersection')
-    df = gp.overlay(df, l_df, how='intersection')
+        l_df = gp.read_file(landuse.text)
 
-    # Remove unwanted columns
-    keepers = [
-        'gross_acres',
-        'gis_acres',
-        'calc_area',
-        'pin_dashless',
-        'soil_type',
-        'slope',
-        'landuse_type',
-        'geometry'
-    ]
+        ## Overlay Data, Tidy Up
+        df = gp.overlay(p_df, s_df, how='intersection')
+        df = gp.overlay(df, l_df, how='intersection')
 
-    df.drop(columns=[c for c in df if c not in keepers], inplace=True)
+        # Remove unwanted columns
+        keepers = [
+            'gross_acres',
+            'gis_acres',
+            'calc_area',
+            'pin_dashless',
+            'soil_type',
+            'slope',
+            'landuse_type',
+            'geometry'
+        ]
 
-    # Calculate part acres
-    df['part_acres'] = df.area / df['calc_area'] * df['gross_acres']
+        df.drop(columns=[c for c in df if c not in keepers], inplace=True)
 
-    # Drop other columns
-    df.drop(columns=['calc_area'], inplace=True)
+        # Calculate part acres
+        df['part_acres'] = df.area / df['calc_area'] * df['gross_acres']
 
-    # LU to string
-    df.loc[:, 'landuse_type'] = '0' + df['landuse_type'].astype('str')
+        # Drop other columns
+        df.drop(columns=['calc_area'], inplace=True)
 
+        # LU to string
+        df.loc[:, 'landuse_type'] = '0' + df['landuse_type'].astype('str')
 
-    ## Finish up acreage
-    # Aggregate
-    out_cols = ['pin_dashless', 'soil_type', 'slope', 'landuse_type']
+        ## Finish up acreage
+        # Aggregate
+        out_cols = ['pin_dashless', 'soil_type', 'slope', 'landuse_type']
 
-    aggs = {
-        'soil_type':'first',
-        'slope':'first',
-        'landuse_type':'first',
-        'pin_dashless':'first',
-        'gross_acres':'max',
-        'part_acres':'sum'
-    }
+        aggs = {
+            'soil_type':'first',
+            'slope':'first',
+            'landuse_type':'first',
+            'pin_dashless':'first',
+            'gross_acres':'max',
+            'part_acres':'sum'
+        }
 
-    df = df.groupby(by=out_cols, as_index=False).agg(aggs).reset_index(drop=True)
+        df = df.groupby(by=out_cols, as_index=False).agg(aggs).reset_index(drop=True)
 
-    ## Check acreage sums
-    qc = df.groupby('pin_dashless').agg({'gross_acres':'max', 'part_acres':'sum'}).reset_index()
-    qc['diff'] = qc['gross_acres'] - round(qc['part_acres'], 4)
+        ## Check acreage sums
+        qc = df.groupby('pin_dashless').agg({'gross_acres':'max', 'part_acres':'sum'}).reset_index()
+        qc['diff'] = qc['gross_acres'] - round(qc['part_acres'], 4)
+        qc['pct_off'] = qc['gross_acres'] / qc['part_acres']
 
-    outliers = qc.query('diff != 0')
+        ## Single out measurable differences
+        outliers = qc.query('diff > 0')
 
-    if len(outliers) > 0:
-        print(f"ACREAGE MISMATCH OF {qc.loc[0,'diff']:f} ON PARCEL {qc.loc[0,'pin_dashless']}")
-        warnings = True
+        if len(outliers) > 0:
 
-    # Round of to 4 decimals
-    df.loc[:, 'part_acres'] = round(df.loc[:, 'part_acres'], 4)
+            # Compare against tolerance; scale if under
+            if abs(1 - qc.loc[0,'pct_off']) <= acre_tolerance:
+                
+                df.loc[:,'part_acres'] = df.loc[:,'part_acres'] * qc.loc[0,'pct_off']
+                
 
-    # Drop 0s
-    df = df[df.loc[:, 'part_acres'] > 0]
+            else:
+                farm_error(f"Acreage mismatch of {qc.loc[0,'diff']:f} on PIN {qc.loc[0,'pin_dashless']}")
+                warnings = True
+                n += 1
+                continue
 
-    # Remove extra fields
-    df.drop(columns=['gross_acres'], inplace=True)
+        # Round of to 4 decimals
+        df.loc[:, 'part_acres'] = round(df.loc[:, 'part_acres'], 4)
 
-    df.to_csv(out_file, sep='\t', header=False, index=False, mode='a')
+        # Drop 0s
+        df = df[df.loc[:, 'part_acres'] > 0]
 
-    n += 1
+        # Remove extra fields
+        df.drop(columns=['gross_acres'], inplace=True)
 
-if warnings:
-    print('Completed with warnings. Check output before importing file!')
-else:
-    print('Completed!')
+        df.to_csv(out_file, sep='\t', header=False, index=False, mode='a')
+
+        n += 1
+
+    if warnings:
+        farm_error(f'Completed, but with warnings. Check {"error file" if errors == "write" else "terminal messages"} for more deatils.')
+    else:
+        print('Completed!')
