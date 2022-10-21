@@ -5,3 +5,5 @@ test.txt
 outliers.csv
 **/farms.gdb/
 pins.txt
+output/
+errors.txt
