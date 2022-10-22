@@ -30,3 +30,18 @@ calc_farms(
     pin_file = 'path to text file'
 )
 ```
+
+## Error Reporting
+
+It's inevitable that some PINs will have errors, such as:
+- The PIN has no geometry
+- The PIN has no listed acreage
+- The output acreage does not match the input
+
+The script will, by default, print console messages if there are errors, and will skip calculating / writing results for problem PINs.
+
+Setting the `errors` parameter to `write` will create a CSV with per-pin error messages. If you're running the script against a large number of parcels, this method is advised.
+
+While not advised, users may wish to ignore any errors and run the file anyway. It is possible to set the parameter to `ignore`, in which case the file attempts to calculate on all valid inputs.
+
+Additionally, acreage mismatches under a given `acre_tolerance` will be automatically scaled to match the input. Larger differences will be rejected and reported according to the setting of the `errors` parameter.
