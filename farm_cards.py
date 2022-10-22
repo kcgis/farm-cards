@@ -204,7 +204,7 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
         ## Single out measurable differences
         outliers = qc.query('diff > 0')
 
-        if len(outliers) > 0:
+        if len(outliers) > 0 and errors != 'ignore':
 
             # Compare against tolerance; scale if under
             if abs(1 - qc.loc[0,'pct_off']) <= acre_tolerance:
