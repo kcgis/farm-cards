@@ -35,9 +35,9 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
     def farm_error(msg):
 
         if errors == 'warn':
-            print(msg)
+            print(' '.join(msg.split(',')))
         elif errors == 'write':
-            with open('./errors.txt', 'a') as e:
+            with open('./errors.csv', 'a') as e:
                 e.write(f'\n{msg}')
         elif errors == 'halt':
             raise ValueError(msg)
@@ -65,8 +65,8 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
 
     # If specifically set to 'write', create fresh file
     if errors == 'write':
-        with open('./errors.txt', 'w') as e:
-            e.write(f'-----ERROR LOG FOR {out_file}-----')
+        with open('./errors.csv', 'w') as e:
+            e.write('PIN,error,num')
         
     ## Drop any existing file by same name
     if Path.exists(out_file):
@@ -114,7 +114,7 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
 
         if len(p_dict['features']) == 0:
             
-            farm_error(f"Query for PIN {pin_list[n]} returned no features.")
+            farm_error(f"{pin_list[n]},query returned no features,")
             warnings = True
             n += 1
             continue
@@ -125,7 +125,7 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
 
         # Check to see that parcels have an acreage listed
         if p_df.loc[0,'gross_acres'] == 0 or not p_df.loc[0,'gross_acres']:
-            farm_error(f"PIN {pin_list[n]} has 0 acreage! Double check acreage and property class in Devnet.")
+            farm_error(f"{pin_list[n]},has no acreage listed,0")
             warnings = True
             n += 1
             continue
@@ -213,7 +213,7 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
                 
 
             else:
-                farm_error(f"Acreage mismatch of {qc.loc[0,'diff']:f} on PIN {qc.loc[0,'pin_dashless']}")
+                farm_error(f"{qc.loc[0,'pin_dashless']},has acreage mismatch, {qc.loc[0,'diff']:f}")
                 warnings = True
                 n += 1
                 continue
@@ -232,6 +232,6 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
         n += 1
 
     if warnings:
-        farm_error(f'Completed, but with warnings. Check {"error file" if errors == "write" else "terminal messages"} for more deatils.')
+        print(f'Completed, but with warnings. Check {"error file" if errors == "write" else "terminal messages"} for more deatils.')
     else:
         print('Completed!')
