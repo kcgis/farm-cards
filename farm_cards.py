@@ -31,6 +31,26 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
     from datetime import datetime
     import re
 
+    # Suppress constant warnings; these come from GeoPandas, not in our control
+    pd.options.mode.chained_assignment = None
+
+    ## Figures
+    def gen_figure(p_df, s_df, l_df, filename):
+
+        import matplotlib.pyplot as plt
+
+        fig, axs = plt.subplots(1,3, figsize=(18,8), sharex=True, sharey=True)
+
+        p_df.plot(column='pin_dashless', ax=axs[0])
+        s_df.plot(column='musym', ax=axs[1])
+        l_df.plot(column='landuse_type', ax=axs[2])
+
+        axs[0].set_title('Parcels')
+        axs[1].set_title('Soils')
+        axs[2].set_title('Landuse')
+
+        fig.savefig(filename)
+
     ## Error Function
     def farm_error(msg):
 
@@ -148,6 +168,7 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
         # Soils
         soils = requests.get(soils_url, farm_params)
         s_df = gp.read_file(soils.text)
+        s_df.loc[:, 'slope'].fillna('', inplace=True)
 
         # Landuse
         landuse = requests.get(landuse_url, farm_params)
@@ -215,6 +236,9 @@ def calc_farms(pins=None, pin_file=None, out_file=None, errors='warn', acre_tole
             else:
                 farm_error(f"{qc.loc[0,'pin_dashless']},has acreage mismatch, {qc.loc[0,'diff']:f}")
                 warnings = True
+
+                gen_figure(p_df, s_df, l_df, qc.loc[0,'pin_dashless'])
+
                 n += 1
                 continue
 
