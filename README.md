@@ -31,6 +31,14 @@ calc_farms(
 )
 ```
 
+## Python Environment
+
+If you do not already have a suitable environment available, you can use the included `conda-env.yml` file to create one:
+
+```sh
+conda create -f conda-env.yml
+```
+
 ## Error Reporting
 
 It's inevitable that some PINs will have errors, such as:

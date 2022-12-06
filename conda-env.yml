@@ -1,0 +1,12 @@
+name: geopy
+channels:
+    - conda-forge
+dependencies:
+    - geopandas
+    - pandas
+    - numpy
+    - requests
+    - pathlib
+    - fiona
+    - ipython
+    - jupyter
