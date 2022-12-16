@@ -15,10 +15,10 @@ Users wishing to see the actual file that KCGIS runs to generate farm cards can 
 
 # Using This Tool
 
-If you want to adapt or use this tool, simply activate a Python environment and import the `farm_cards.py` file like a library, then call the `calc_farms` function:
+If you want to adapt or use this tool, simply activate a Python environment, browse to the repo directory, and import the `farm_cards.py` file like a library, then call the `calc_farms` function:
 
 ```python
-import farm_cards.py
+from farm_cards import calc_farms
 
 calc_farms(
     pins = 'string of PINs'
