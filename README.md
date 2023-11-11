@@ -1,3 +1,7 @@
+# NOTICE
+
+This repository is now archived, as the County has moved its active development work to Codeberg. You can find the current repository here: https://codeberg.org/kendall-county-gis/farm-cards
+
 # Kendall County Farm Card Calculations
 
 ## Overview
